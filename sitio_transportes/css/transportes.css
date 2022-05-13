@@ -1,0 +1,143 @@
+/* font-family: 'Open Sans' sans-serif; */
+body {
+    font-family: 'Open Sans' sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+header {
+    background-color: blue;
+    padding: 16px 0;
+}
+
+header h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 100;
+    font-style: italic;
+    display: inline-block;
+    position: relative;
+    bottom: 35px;
+    margin-left: 10px;
+}
+
+nav {
+    background-color: rgb(132, 0, 255);
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {  
+    /* Con flex grow separamos cada enlace que por defecto quedan juntos
+    pero el padre, en este caso nav ul debe tener un display flex */
+    flex-grow: 1;
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;
+}
+
+nav ul li a:hover{
+background-color: black;
+}
+nav ul li a.activo{
+    background-color: #1677e6;
+}
+
+.contenedor{
+    max-width: 960px;
+    margin: 0 auto;
+}
+footer{
+    background-color: rgb(23, 23, 109);
+    clear:right;
+    color: rgb(129, 103, 189);
+    text-align:center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+h2{
+    /* color:rgb(251, 243, 243); */
+    font-weight:500;
+    margin-bottom: 10px;
+}
+/* reglas del home */
+.bienvenidos{
+    width: 75%;
+    padding-right: 10px;
+    box-sizing: border-box;
+    background-color: orange;
+}
+.testimonios{
+    width: 20%;
+    background-color: rgb(45, 36, 202);
+}
+.columnas{
+    display: flex;
+    justify-content:space-between;
+    gap: 1px;
+    /*
+     Gap es un atributo que abre como una calle entre medio de 
+    las cajas de bienvenidos y testimonios */
+
+}
+.bienvenidos p {
+    font-size: 20px;
+}
+.testimonio .cita {
+    color: rgb(240, 22, 29);
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    background-color: yellow;
+    display: block;
+
+}
+.testimonio .autor{
+color: white;
+font-size: 10px;
+text-align: center;
+background-color: lightcoral;
+display: block;
+/* en testimonio.cita y testimonio.autor se pone display block porque 
+sino queda el testimonio y el autor juntos, en las mismas líneas,
+de esta forma el testimonio queda arriba del autor del testimonio, separados
+ */
+margin: 12px 0;
+}
+/* fin de página home */
+
+/* comienzo página nosotros */
+.historia{
+    font-size: 12px;
+}
+.personas{
+    display: flex;
+    justify-content: space-between;
+}
+.persona{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    width: 18%;
+    text-align:center;
+    padding: 13px;
+    box-sizing: border-box;
+}
+.persona img{
+    border-radius: 157px 157px 157px 157px;
+    border: 1px solid #444242;
+
+}
+/* fin página nosotros */
